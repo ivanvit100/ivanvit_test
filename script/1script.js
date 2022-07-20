@@ -1,6 +1,6 @@
-video = document.getElementById("video");
+video = document.querySelector("#video");
 checkbox = document.querySelector(".checkbox");
-state = document.getElementById("state-s");
+state = document.querySelector("#state-s");
 progress = document.querySelector(".progress");
 knobs = document.querySelector(".knobs");
 layer = document.querySelector(".layer");
