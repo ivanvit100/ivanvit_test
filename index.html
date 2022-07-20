@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"><!--Кодировка-->
+	<!-- Primary Meta Tags -->
+	<title>PictureInPicture | ivanvit.ru</title>
+	<meta name="title" content="PictureInPicture | ivanvit.ru">
+	<meta name="description" content="Простая утилита для трансляции камеры в режиме 'Картинка в картинке'">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ai.ivanvit.ru/pip">
+	<meta property="og:title" content="PictureInPicture | ivanvit.ru">
+	<meta property="og:description" content="Простая утилита для трансляции камеры в режиме 'Картинка в картинке'">
+	<meta property="og:image" content="https://ai.ivanvit.ru/pip/media/preview.png">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://ai.ivanvit.ru/pip/">
+	<meta property="twitter:title" content="PictureInPicture | ivanvit.ru">
+	<meta property="twitter:description" content="Простая утилита для трансляции камеры в режиме 'Картинка в картинке'">
+	<meta property="twitter:image" content="https://ai.ivanvit.ru/pip/media/preview.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--Размер экрана-->
+	<meta name="theme-color" content="#ffffff"><!--Цвет поисковой строки-->
+	<meta name="keywords" content="pip, picture in picture, ivanvit, трансляция, камера, webcam, зеркало, mirror"><!--Keywords-->
+	<link rel="stylesheet" href="./style/style.css"><!--Файл стиля-->
+	<link rel="shortcut icon" href="./media/1logo.png" type="image/png"><!--Логотип-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet"> 
+	<script src="./script/alert.js"></script><!--Alert script-->
+</head>
+<body>
+	<header>
+		<p id="navbar"><img src="./media/1logo.png" alt="Лого" id="logo"><span id="pip" class="h-p">PictureInPicture</span><span id="pip1" class="h-p">PicInPic</span></p>
+		<div id="h-p-b"><a class="h-p" id="h-p-f" href="mailto:develope@ivanvit.ru">Предложить</a><a class="h-p" id="h-p-s" href="https://ivanvit.ru">Больше</a></div>
+        <div class="state">
+			<div class="progress"></div>
+			<div id="state-b"><span id="state-s">Ожидание доступа к камере</span></div>
+		</div>
+		<div id="button-container">
+			<div class="button r" id="button-1">
+        		<div><input type="checkbox" class="checkbox" onchange="togglePictureInPicture()"></div>
+        		<div class="knobs"></div>
+        		<div class="layer"></div>
+        	</div>
+        	<div id="state-o"><span id="state-p">Картинка в картинке</span></div>
+		</div>
+		<div id="video-container"><video id="video" autoplay=""></video></div>
+		<div id="shoot_container" style="z-index: 2;">
+			<div>
+				<input type="radio" id="png" name="shoot_type" class="shoot_radio" value="png" checked>
+				<label for="png">PNG</label>
+				<br>
+				<input type="radio" id="jpg" name="shoot_type" class="shoot_radio" value="jpg">
+				<label for="jpg">JPG</label>
+				<br>
+				<input type="radio" id="svg" name="shoot_type" class="shoot_radio" value="svg">
+				<label for="svg">SVG</label>
+			</div>
+			<div>
+				<button id="shoot"><img src="./media/camera.svg" alt="camera" style="height: 75%"></button>
+			</div>
+		</div>
+	</header>
+	<script src="./script/vue.js"></script>
+	<script src="./script/shoot.js"></script>
+	<script type="text/javascript" src="./script/1script.js"></script>
+</body>
+</html>

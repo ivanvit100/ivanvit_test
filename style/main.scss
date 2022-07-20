@@ -1,0 +1,71 @@
+@import "./variable";
+@import "./alert";
+@import "./work";
+@import "./pc";
+
+body, html{
+	@extend %back;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+	margin: 0;
+}
+*::selection, *::-moz-selection{
+	background: $blue6;
+}
+*{
+	scrollbar-width: thin;
+	scrollbar-color: $main-blue #eee;
+}
+*::-webkit-scrollbar{
+	width: 12px;
+}
+*::-webkit-scrollbar-track{
+	background: #eee;
+}
+*::-webkit-scrollbar-thumb{
+	background-color: $main-blue;
+	border-radius: 20px;
+	border: 3px solid #eee;
+}
+html{
+	min-height: 630px;
+	cursor: url(./select.png), auto;
+	width: 100%;
+	height: 100%;
+}
+a, h1, h2, span, p, button, #l1, video, img, input[type="checkbox"], .cookie-consent, .cookie-consent__buttons-button, .cookie-consent__buttons__close, .cookie-consent__buttons__read-more, label{
+	cursor: url(./link.png), auto !important;
+}
+header{
+	background-color: white;
+	max-width: 100wv;
+	min-height: 85vh;
+	margin-bottom: 40px;
+	padding-top: 15px;
+	-webkit-box-shadow: $blue-shadow;
+	-moz-box-shadow: $blue-shadow;
+	box-shadow: $blue-shadow;
+	border-radius: 0 0 20px 20px;
+	display: grid;
+	grid-template-rows: 110px 240px 150px;
+	grid-template-columns: 60% 40%;
+	justify-content: center;
+	padding: 0 25px 25px 25px;
+}
+video{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	border: 4px solid $main-blue;
+	border-radius: 15px;
+	background-color: black;
+	margin: 0;
+	max-height: 55vh;
+	float: right
+}
+label{
+    margin-right: 15px;
+    line-height: 32px;
+    font-size: 18px;
+}

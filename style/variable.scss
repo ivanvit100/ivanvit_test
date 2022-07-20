@@ -1,0 +1,19 @@
+//variables
+$blue: rgb(128, 90, 255);
+$blue6: rgba(128, 90, 255, 0.6); 
+$main-blue: #805aff;
+$blue-shadow: 0px 8px 7px 1px rgba(68,75,177,0.6);
+$alert-shadow: -4px -4px 7px 7px rgba(88, 38, 255, 0.43);
+$orange: rgb(255, 127, 38);
+$light-blue: #d8ccff;
+
+//extends
+%back{
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	background: $blue;
+	background: -moz-linear-gradient(151deg, rgba(128,90,255,1) 0%, rgba(91,42,255,1) 100%);
+	background: -webkit-linear-gradient(151deg, rgba(128,90,255,1) 0%, rgba(91,42,255,1) 100%);
+	background: linear-gradient(151deg, rgba(128,90,255,1) 0%, rgba(91,42,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$main-blue,endColorstr="#5b2aff",GradientType=1);
+}

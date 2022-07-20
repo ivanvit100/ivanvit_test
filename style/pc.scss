@@ -1,0 +1,50 @@
+@media(min-width: 500px){
+	.state{
+		position: relative;
+		bottom: -20px;
+	}
+	#video-container{
+		grid-row: 2/4;
+		grid-column: 2;
+	}
+	#shoot_container{
+		padding-top: 15px;
+	}
+	header{
+		grid-template-columns: 65% 35%;
+	}
+}
+
+@media(min-width: 730px){
+	#h-p-b{
+		display: inline-block;
+		grid-row: 1;
+		grid-column: 2;
+		text-decoration: none;
+		color: #444bb1;
+		font-size: 20px;
+		margin: auto 0 auto auto;
+	}
+	#navbar{
+		margin: auto auto auto 0;
+		grid-column: 1;
+	}
+	.h-p{
+		font-size: 30px;
+	}
+	header, label{
+		font-size: 20px;
+	}
+	header{
+		grid-template-columns: 65% 35%;
+	}
+}
+
+@media(max-width: 340px){
+	#pip{
+		display: none;
+	}
+	#pip1{
+		display: inline-block;
+	}
+}
