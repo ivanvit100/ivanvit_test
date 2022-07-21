@@ -22,7 +22,7 @@ document.getElementById("shoot").onclick = function(){
 	a = document.createElement('a');  
 	a.style.display = 'none';
 	a.href = strDataURL;
-	a.download = "Photo." + filetype;
+	a.download = name;
 	document.body.appendChild(a);
 	a.click();
 	document.body.removeChild(a);
