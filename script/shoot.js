@@ -1,13 +1,3 @@
-var download = function(href, name){
-	var link = document.createElement('a');
-	link.download = name;
-	link.style.display = "none";
-	document.append(link);
-	link.href = href;
-	link.click();
-	link.remove();
-}
-
 document.getElementById("shoot").onclick = function(){
 	video = document.querySelector("#video");
 	png = document.querySelector("#png").checked;
