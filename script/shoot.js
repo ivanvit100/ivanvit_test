@@ -14,12 +14,15 @@ document.getElementById("shoot").onclick = function(){
 	jpg = document.querySelector("#jpg").checked;
 	if (png){
 		filetype = "png";
+		name = "Photo.png";
 	}
 	else if (jpg){
-		filetype = "jpg";
+		filetype = "jpeg";
+		name = "Photo.jpg";
 	}
 	else{
 		filetype = "webp";
+		name = "Photo.webp";
 	}
 	canvas = window.canvas = document.createElement("canvas");
 	canvas.width = video.videoWidth;
